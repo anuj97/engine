@@ -5,7 +5,7 @@ meta {
 }
 
 post {
-  url: http://localhost:8080/auth/login
+  url: {{protocol}}{{base-url}}/auth/login
   body: json
   auth: inherit
 }
@@ -16,9 +16,13 @@ headers {
 
 body:json {
   {
-    "username": "anuj97",
-    "password": "mdrxb450"
+    "username": {{username}},
+    "password": {{password}}
   }
+}
+
+script:post-response {
+  bru.setVar('bearer-token', res.body.token)
 }
 
 settings {

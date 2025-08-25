@@ -1,0 +1,27 @@
+meta {
+  name: create a transaction
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{protocol}}{{base-url}}/transactions
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "title": "demo",
+    "timestamp": "1",
+    "amount": 10,
+    "type": "EARN",
+    "account": null,
+    "category": null,
+    "tag": null
+  }
+}
+
+settings {
+  encodeUrl: true
+}

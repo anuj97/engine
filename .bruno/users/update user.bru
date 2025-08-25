@@ -1,0 +1,32 @@
+meta {
+  name: update user
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{protocol}}{{base-url}}/users/68ac7ed256dfaec5e8347ced
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+      "username": "anuj97",
+      "email": "anujupadhyayjnp@gmail.com",
+      "firstName": "Anuj",
+      "lastName": "Upadhyay",
+      "phoneNumber": null,
+      "profilePictureUrl": null,
+      "defaultCurrency": null,
+      "emailVerified": false
+    }
+}
+
+settings {
+  encodeUrl: true
+}

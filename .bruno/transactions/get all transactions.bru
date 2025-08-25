@@ -1,12 +1,12 @@
 meta {
-  name: create
+  name: get all transactions
   type: http
-  seq: 1
+  seq: 2
 }
 
-post {
+get {
   url: {{protocol}}{{base-url}}/transactions
-  body: none
+  body: json
   auth: inherit
 }
 
