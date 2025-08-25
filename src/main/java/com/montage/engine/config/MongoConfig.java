@@ -8,11 +8,11 @@ import org.springframework.data.mongodb.core.SimpleMongoClientDatabaseFactory;
 
 @Configuration
 public class MongoConfig {
-    @Value("${mongo.uri}")
-    private String uri;
+  @Value("${mongo.uri}")
+  private String uri;
 
-    @Bean
-    public MongoTemplate mongoTemplate() {
-        return new MongoTemplate(new SimpleMongoClientDatabaseFactory(uri));
-    }
+  @Bean
+  public MongoTemplate mongoTemplate() {
+    return new MongoTemplate(new SimpleMongoClientDatabaseFactory(uri));
+  }
 }

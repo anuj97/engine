@@ -1,4 +1,3 @@
-
 package com.montage.engine;
 
 import org.junit.jupiter.api.Test;
@@ -9,8 +8,6 @@ import org.springframework.test.context.ActiveProfiles;
 @ActiveProfiles("test")
 class EngineApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
-
+  @Test
+  void contextLoads() {}
 }

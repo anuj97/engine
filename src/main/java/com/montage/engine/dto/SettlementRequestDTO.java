@@ -1,17 +1,13 @@
-package com.montage.engine.model;
+package com.montage.engine.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "settlements")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Settlement {
-  @Id private String id;
+public class SettlementRequestDTO {
   private String fromUserId;
   private String toUserId;
   private Double amount;
