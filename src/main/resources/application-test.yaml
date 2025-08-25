@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: engine-test
+mongo:
+  uri: mongodb://dummy/dummy
+jwt:
+  secret: dummysecretkeydummysecretkeydummyse
+  expiration: 86400000
